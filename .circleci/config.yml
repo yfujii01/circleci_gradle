@@ -3,6 +3,11 @@
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
 version: 2
+
+general:
+  artifacts:
+    - "app/build/reports/tests"
+    
 jobs:
   build:
     docker:
