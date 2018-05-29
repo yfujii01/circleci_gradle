@@ -6,7 +6,7 @@ version: 2
 
 general:
   artifacts:
-    - "app/build/reports/tests"
+    - "build/reports/tests/test"
     
 jobs:
   build:
