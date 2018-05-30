@@ -43,19 +43,21 @@ jobs:
       - run: gradle test
 
     
-      - run:
-          name: Save test results
-          command: |
-            mkdir -p ~/junit/
-            find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} ~/junit/ \;
-          when: always
+      # - run:
+      #     name: Save test results
+      #     command: |
+      #       mkdir -p ~/junit/
+      #       find . -type f -regex ".*/build/test-results/.*xml" -exec cp {} ~/junit/ \;
+      #     when: always
 
-      - run:
-          name: copy test results
-          command: |
-            cp -r build/reports/* ~/junit/
-          when: always
+      # - run:
+      #     name: copy test results
+      #     command: |
+      #       cp -r build/reports/* ~/junit/
+      #     when: always
       - store_test_results:
-          path: ~/junit
+          # path: ~/junit
+          path: ~/repo/build/test-results
       - store_artifacts:
-          path: ~/junit  
+          # path: ~/junit  
+          path: ~  
