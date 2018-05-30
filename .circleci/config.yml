@@ -60,4 +60,5 @@ jobs:
           path: ~/repo/build/test-results/test
       - store_artifacts:
           # path: ~/junit  
-          path: ~/
+          # path: ~/
+          path: ~/repo/build/reports/tests/test
