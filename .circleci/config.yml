@@ -55,9 +55,9 @@ jobs:
       #     command: |
       #       cp -r build/reports/* ~/junit/
       #     when: always
-      # - store_test_results:
+      - store_test_results:
           # path: ~/junit
-          # path: ~/repo/build/test-results
+          path: ~/repo/build/test-results/test
       - store_artifacts:
           # path: ~/junit  
           path: ~/
