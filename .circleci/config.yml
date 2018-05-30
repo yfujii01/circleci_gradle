@@ -42,7 +42,7 @@ jobs:
       # run tests!
       - run: gradle test
 
-    steps:
+    
       - run:
           name: Save test results
           command: |
